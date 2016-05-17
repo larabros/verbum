@@ -1,0 +1,46 @@
+{
+    "name": "larabros/verbum",
+    "type": "library",
+    "description": "A localisation thing",
+    "keywords": [
+        "larabros",
+        "verbum",
+        "l18n"
+    ],
+    "homepage": "https://github.com/larabros/verbum",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas",
+            "email": "varguti@gmail.com",
+            "homepage": "http://nicgutierrez.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~5.5|~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Larabros\\Verbum\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Larabros\\Verbum\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
