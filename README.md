@@ -41,7 +41,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details
 
 ## Security
 
-If you discover any security related issues, please email nicolas_gutierrez@scee.net instead of using the issue tracker.
+If you discover any security related issues, please email varguti@gmail.com instead of using the issue tracker.
 
 ## Credits
 
