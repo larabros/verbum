@@ -4,6 +4,11 @@ namespace Larabros\Verbum;
 
 class Vox
 {
+    /**
+     * @var Vox instance
+     */
+    public static $class = null;
+
     private $locale        = null;
     private $directory     = null;
     private $defaultLocale = 'en_GB';
@@ -18,6 +23,8 @@ class Vox
         $this->locale        = $locale;
         $this->directory     = $directory;
         $this->defaultLocale = $default;
+
+        self::$class = $this;
     }
 
     /**
