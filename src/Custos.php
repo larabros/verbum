@@ -12,6 +12,18 @@ class Custos
     private $copyLocation  = null;
     private $vox           = null;
     private $mapping       = ['GB' => 'en_GB','AU' => 'en_AU', 'AE' => 'en_AE', 'IN' => 'en_IN', 'IE' => 'en_IE', 'NZ' => 'en_NZ', 'ZA' => 'en_ZA', 'DE' => 'de_DE', 'AT' => 'de_AT', 'CH' => 'de_CH', 'FR' => 'fr_FR', 'BE' => 'fr_BE', 'LU' => 'fr_LU', 'CZ' => 'cs_CZ', 'DK' => 'da_DK', 'GR' => 'el_GR', 'ES' => 'es_ES', 'IT' => 'it_IT', 'NL' => 'nl_NL', 'NO' => 'no_NO', 'SE' => 'sv_SE', 'FI' => 'fi_FI', 'RU' => 'ru_RU', 'PT' => 'pt_PT', 'PL' => 'pl_PL', 'TR' => 'tr_TR', 'LV' => 'en_LV', 'LT' => 'en_LT', 'EE' => 'en_EE'];
+    public $names = [
+        'en_GB' => 'English',
+        'de_DE' => 'Deutsch',
+        'es_ES' => 'Español',
+        'it_IT' => 'Italiano',
+        'el_GR' => 'ΕΛΛΗΝΙΚΑ',
+        'nl_NL' => 'Nederlands',
+        'pl_PL' => 'Polskie',
+        'pt_PT' => 'Português',
+        'ru_RU' => 'Русский',
+        'tr_TR' => 'Türkçe'
+    ];
 
     /**
      * Create a new Custos instance
@@ -70,6 +82,20 @@ class Custos
         }
 
         return $this->locale;
+    }
+
+    public function getLocale()
+    {
+        return $this->locale;
+    }
+
+    public function getLanguage()
+    {
+        return $this->names[$this->locale];
+    }
+
+    public function getLanguages()
+    {
     }
 
     private function validate()
