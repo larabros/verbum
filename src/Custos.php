@@ -58,7 +58,7 @@ class Custos
     private function detectLocale()
     {
         if (null == ($locale = $this->getLocaleFromUrl())) {
-            $locale = $this>getLocaleFromGeo();
+            $locale = $this->getLocaleFromGeo();
             header('location: /' . $locale);
             exit;
         }
