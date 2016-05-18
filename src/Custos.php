@@ -18,7 +18,6 @@ class Custos
      */
     public function __construct($location = null, $url = '/')
     {
-        $this->locale       = $this->detectLocale();
         $this->url          = $url;
         $this->copyLocation = $location;
     }
@@ -63,7 +62,14 @@ class Custos
             exit;
         }
 
-        return ltrim($locale, '/');
+        $this->locale = ltrim($locale, '/');
+
+        if (!$this->validate()) {
+            header('location: /' . $this->defaultLocale);
+            exit;
+        }
+
+        return $this->locale;
     }
 
     private function validate()
@@ -74,6 +80,8 @@ class Custos
 
     private function handle()
     {
+        $this->detectLocale();
+
         if (!$this->validate()) {
             return false;
         }
