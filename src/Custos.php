@@ -63,7 +63,7 @@ class Custos
             exit;
         }
 
-        return $locale;
+        return ltrim($locale, '/');
     }
 
     private function validate()
