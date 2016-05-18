@@ -59,7 +59,7 @@ class Custos
         if(false !== $country && array_key_exists($country, $this->mapping)) {
             $locale = $this->mapping[$country];
 
-            if ($this->validateLocale($locale)) {
+            if ($this->validate($locale)) {
                 return $locale;
             }
         }
@@ -99,10 +99,11 @@ class Custos
     {
     }
 
-    private function validate()
+    private function validate($locale = null)
     {
+        $l = $locale ? $locale : $this->locale;
         // ToDo: remember that we also have locales such as en_ANZ
-        return strlen($this->locale) == 5 && 2 == strpos($this->locale, '_') && count(glob($this->copyLocation . '/*_' . $this->locale . '.php'));
+        return strlen($l) == 5 && 2 == strpos($l, '_') && count(glob($this->copyLocation . '/*_' . $l . '.php'));
     }
 
     private function handle()
