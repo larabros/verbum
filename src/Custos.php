@@ -37,7 +37,8 @@ class Custos
     public static function init($location = null, $url = '/')
     {
         self::$class = new Custos($location, $url);
-        return self::$class->handle();
+        self::$class->handle();
+        return self::$class;
     }
 
     private function getLocaleFromUrl()
