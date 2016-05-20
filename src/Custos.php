@@ -75,7 +75,7 @@ class Custos
             exit;
         }
 
-        $this->locale = ltrim($locale, '/');
+        $this->locale = rtrim(ltrim($locale, '/'), '/');
 
         if (!$this->validate()) {
             header('location: /' . $this->defaultLocale);
