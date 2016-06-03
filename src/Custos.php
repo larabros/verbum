@@ -14,15 +14,21 @@ class Custos
     private $mapping       = ['GB' => 'en_GB','AU' => 'en_AU', 'AE' => 'en_AE', 'IN' => 'en_IN', 'IE' => 'en_IE', 'NZ' => 'en_NZ', 'ZA' => 'en_ZA', 'DE' => 'de_DE', 'AT' => 'de_AT', 'CH' => 'de_CH', 'FR' => 'fr_FR', 'BE' => 'fr_BE', 'LU' => 'fr_LU', 'CZ' => 'cs_CZ', 'DK' => 'da_DK', 'GR' => 'el_GR', 'ES' => 'es_ES', 'IT' => 'it_IT', 'NL' => 'nl_NL', 'NO' => 'no_NO', 'SE' => 'sv_SE', 'FI' => 'fi_FI', 'RU' => 'ru_RU', 'PT' => 'pt_PT', 'PL' => 'pl_PL', 'TR' => 'tr_TR', 'LV' => 'en_LV', 'LT' => 'en_LT', 'EE' => 'en_EE'];
     public $names = [
         'en_GB' => 'English',
+        'cs_CZ' => 'Česká republika',
+        'da_DK' => 'Danmark',
         'de_DE' => 'Deutsch',
-        'es_ES' => 'Español',
-        'it_IT' => 'Italiano',
         'el_GR' => 'ΕΛΛΗΝΙΚΑ',
+        'es_ES' => 'Español',
+        'fi_FI' => 'Suomi',
+        'fr_FR' => 'Français',
+        'it_IT' => 'Italiano',
         'nl_NL' => 'Nederlands',
+        'no_NO' => 'Norge',
         'pl_PL' => 'Polskie',
         'pt_PT' => 'Português',
         'ru_RU' => 'Русский',
-        'tr_TR' => 'Türkçe'
+        'sv_SE' => 'Sverige',
+        'tr_TR' => 'Türkçe',
     ];
 
     /**
