@@ -55,14 +55,18 @@ class Custos
         'de_DE' => 'Deutschland',
         'de_AT' => 'Österreich',
         'de_CH' => 'Schweiz',
+        'de_LU' => 'Luxemburg',
 
         'es_ES' => 'España',
 
         'it_IT' => 'Italia',
+
         'it_CH' => 'Svizzera',
+        'fr_CH' => 'Suisse',
 
         'el_GR' => 'Ελλάδα',
         'nl_NL' => 'Nederland',
+        'nl_BE' => 'België',
         'pl_PL' => 'Polska',
         'pt_PT' => 'Portugal',
         'ru_RU' => 'Россия',
