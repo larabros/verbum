@@ -23,7 +23,7 @@ class Custos
         'AT' => 'de_AT',
         'CH' => 'de_CH',
         'FR' => 'fr_FR',
-        'BE' => 'fr_BE',
+        'BE' => 'nl_BE',
         'LU' => 'fr_LU',
         'CZ' => 'cs_CZ',
         'DK' => 'da_DK',
